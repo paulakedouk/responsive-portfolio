@@ -267,6 +267,12 @@ input[type='submit'] {
     display: inline-block;
   }
 
+  .navbar a {
+    width: 32%;
+    padding: 0;
+    margin: 0;
+  }
+
   #main-container {
     padding: 0;
   }
@@ -293,7 +299,7 @@ input[type='submit'] {
 
 @media screen and (min-width: 641px) and (max-width: 768px) {
   .auth-image {
-    width: 100%;
+    width: 50%;
     margin-bottom: 20px;
   }
 
@@ -324,6 +330,12 @@ input[type='submit'] {
     float: none;
     margin: 0 auto;
     max-width: 768px;
+  }
+
+  .main-section .work {
+    float: none;
+    display: inline-block;
+    width: 100%;
   }
 
   .main-section {
