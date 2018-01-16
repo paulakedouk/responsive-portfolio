@@ -250,6 +250,10 @@ input[type='submit'] {
     width: 100%;
   }
 
+  .header {
+    position: static;
+  }
+
   .auth-image {
     width: 100%;
     margin-bottom: 20px;
@@ -264,7 +268,7 @@ input[type='submit'] {
   }
 
   #main-container {
-    padding-top: 175px;
+    padding: 0;
   }
 
   .main-section,
@@ -273,6 +277,17 @@ input[type='submit'] {
     margin: 0 auto;
     margin-bottom: 30px;
     max-width: 480px;
+  }
+
+  .main-section .work {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .main-section p {
+    font-size: 16px;
+    line-height: 30px;
   }
 }
 
