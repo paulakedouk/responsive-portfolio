@@ -197,16 +197,46 @@ h3,
 
 .auth-image {
   float: left;
-  width: 200px;
-  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   margin-top: 10px;
   margin-right: 25px;
+  /* animation */
+  left: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.auth-image.top:hover {
+  opacity: 0;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative h4 {
+  position: absolute;
+  top: 205px;
+  font-size: 12px;
+  color: #ccc;
 }
 
 /* contact page */
 
 #contact-form ul {
   margin-bottom: 20px;
+}
+
+#connect a {
+  text-decoration: none;
 }
 
 #contact-form li {
@@ -254,9 +284,12 @@ input[type='submit'] {
     position: static;
   }
 
+  .relative h4 {
+    position: initial;
+  }
+
   .auth-image {
     width: 100%;
-    margin-bottom: 20px;
   }
 
   .navbar {
@@ -303,6 +336,10 @@ input[type='submit'] {
     margin-bottom: 20px;
   }
 
+  .relative h4 {
+    top: 280px;
+  }
+
   .main-section,
   .sidebar,
   .header-container {
@@ -322,7 +359,10 @@ input[type='submit'] {
 @media screen and (min-width: 769px) and (max-width: 980px) {
   .auth-image {
     width: 100%;
-    margin-bottom: 20px;
+  }
+
+  .relative h4 {
+    position: initial;
   }
 
   .header-container,
@@ -340,5 +380,11 @@ input[type='submit'] {
 
   .main-section {
     max-width: 460px;
+  }
+}
+
+@media screen and (min-width: 981px) {
+  .auth-image {
+    height: 200px;
   }
 }
